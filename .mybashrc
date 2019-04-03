@@ -1,0 +1,26 @@
+# this is .mybashrc
+# make your own magic here
+#[ -d /opt/sfw/bin ] && PATH=$PATH:/opt/sfw/bin
+[ -d /usr/cuda/bin ] && PATH=$PATH:/usr/cuda/bin
+export PATH
+export CLASSPATH=".:${CLASSPATH:+"$CLASSPATH:"}/home/btjones/Public/junit/hamcrest-core-1.3.jar:/home/btjones/Public/junit/junit-4.12.jar"
+export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \$ '
+alias junit="java org.junit.runner.JUnitCore"
+alias code="cd ~/Desktop/Code"
+alias cpe225="cd ~/Desktop/Code/CPE225"
+alias cpe357="cd ~/Desktop/Code/CPE357"
+alias cpe315="cd ~/Desktop/Code/CPE315"
+alias os="cd ~/Desktop/CPE453"
+alias security="cd ~/Desktop/Security/Security"
+alias style="~kmammen-grader/bin/styleCheckC *.c"
+alias complex="complexity -t0 -s1 *.c"
+alias mk="make clean; make"
+alias gs="git status"
+alias gc="git commit"
+alias ga="git add"
+alias gp="git push"
+alias gpl="git pull"
+alias forcepull="git fetch --all
+ git reset --hard origin/master"
+
+# end
