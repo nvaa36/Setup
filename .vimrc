@@ -1,5 +1,3 @@
-set spell
-
 set backspace=indent,eol,start
 syntax enable
 set background=dark
@@ -22,3 +20,4 @@ cnoreabbrev Q q
 noremap <leader>a =ip
 
 set nocompatible              " be iMproved, required
+autocmd Filetype make setlocal noexpandtab
